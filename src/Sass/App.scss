@@ -75,6 +75,10 @@ body {
             display: flex;
             flex-direction: column;
 
+            button {
+                transition: 0.7s ease;
+            }
+
             .button1 {
                 border: none;
                 border-radius: 10%;
@@ -100,6 +104,10 @@ body {
                 width: 100px;
                 box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
             }
+        }
+
+        .button-boxshadow:hover > :not(:hover) {
+            opacity: 0.2;
         }
 
         .cool-input {
