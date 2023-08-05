@@ -32,12 +32,14 @@ export default function App() {
           <button className='button2'>Click!</button>
           <button className='button3'>Click!</button>
         </div>
-        <div className='grid-element cool-input' >
-          <input type='text' className='input-field' id='inp' placeholder='Name'>
-          </input>
-          <label className='input-label' htmlFor='inp'>
-            Name
-          </label>
+        <div className='grid-element' >
+          <div className='cool-input'>
+            <input type='text' className='input-field' id='inp' placeholder='Name'>
+            </input>
+            <label className='input-label' htmlFor='inp'>
+              Name
+            </label>
+          </div>
         </div>
       </div>
     </div>
