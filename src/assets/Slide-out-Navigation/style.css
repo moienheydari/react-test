@@ -1,0 +1,51 @@
+header {
+    display: flex;
+}
+
+header .activator {
+    padding: 15px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+header .activator:hover {
+    background: #1e2129;
+}
+
+img {
+    width: 100%;
+    max-width: 55px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #292e38;
+    border-radius: 100%;
+    padding: 2px;
+    clip-path: ellipse(50% 50% at -50% 50%);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+
+nav ul li a:hover {
+    background: #323844;
+}
+
+nav ul li a img {
+    opacity: 0;
+    transform: translateX(-10px);
+}
