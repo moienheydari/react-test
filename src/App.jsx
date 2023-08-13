@@ -3,6 +3,7 @@ import Navigation from './assets/Slide-out-Navigation/Navigation.jsx';
 import Social from './assets/Social-Button/Social.jsx';
 import './css/App.min.css';
 import background from './assets/background.svg';
+import MyForm from './assets/Formik-Form/Form.jsx';
 
 export default function App() {
 
@@ -40,6 +41,9 @@ export default function App() {
               Name
             </label>
           </div>
+        </div>
+        <div className='grid-element form' >
+          <MyForm />
         </div>
       </div>
     </div>
