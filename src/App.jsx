@@ -1,12 +1,18 @@
+import React, { Suspense } from 'react';
+import './css/App.min.css';
 import Dothoverbutt from './assets/Dot-Hover-Button/Dothoverbutt.jsx';
 import Navigation from './assets/Slide-out-Navigation/Navigation.jsx';
 import Social from './assets/Social-Button/Social.jsx';
-import './css/App.min.css';
 import background from './assets/background.svg';
 import MyForm from './assets/Formik-Form/Form.jsx';
+// import Delayed from './assets/Delayed-Component/Delayed.jsx';
+
+const Delayed = import('./assets/Delayed-Component/Delayed.jsx');
+
 
 export default function App() {
-
+  // const Delayed = React.lazy(() => { import('./assets/Delayed-Component/Delayed.jsx') });
+  // const Delayed = import('./assets/Delayed-Component/Delayed');
 
   return (
     <div className='App' style={{
@@ -44,6 +50,11 @@ export default function App() {
         </div>
         <div className='grid-element form' >
           <MyForm />
+        </div>
+        <div className='grid-element delayed' >
+          {/* <Suspense fallback={<h1>Loading....</h1>}> */}
+            <Delayed />
+          {/* </Suspense> */}
         </div>
       </div>
     </div>
