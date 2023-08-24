@@ -147,5 +147,9 @@ body {
                 font-size: 0.9rem;
             }
         }
+
+        .loader :nth-child(1){
+            margin-top: 40px;
+        }
     }
 }
