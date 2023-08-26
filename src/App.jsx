@@ -6,6 +6,8 @@ import Social from './assets/Social-Button/Social.jsx';
 import background from './assets/background.svg';
 import MyForm from './assets/Formik-Form/Form.jsx';
 import LoadingSpinner from './assets/Loading-Spinner/LoadingSpinner';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faCoffee, faCheckSquare, faAddressBook, faUser, faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -60,6 +62,15 @@ export default function App() {
 
         <div className='grid-element loader'>
           <LoadingSpinner />
+        </div>
+
+        <div className='grid-element icons'>
+          <FontAwesomeIcon icon={faPlay} />
+          <FontAwesomeIcon icon={faSearch} />
+          <FontAwesomeIcon icon={faUser} />
+          <FontAwesomeIcon icon={faAddressBook} />
+          <FontAwesomeIcon icon={faCheckSquare} />
+          <FontAwesomeIcon icon={faCoffee} />
         </div>
 
       </div>

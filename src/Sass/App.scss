@@ -107,7 +107,7 @@ body {
             }
         }
 
-        .button-boxshadow:hover > :not(:hover) {
+        .button-boxshadow:hover> :not(:hover) {
             opacity: 0.2;
         }
 
@@ -152,9 +152,28 @@ body {
         .loader {
             height: 75px;
         }
-        
-        .loader :nth-child(1){
+
+        .loader :nth-child(1) {
             margin-top: 20px;
+        }
+
+        .icons {
+            width: 150px;
+            color: blueviolet;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            * {
+                height: 30px;
+                width: 30px;
+                margin: 5px;
+
+                :hover {
+                    transition: 0.5s;
+                    color: aquamarine;
+                }
+            }
         }
     }
 }
