@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 import './css/App.min.css';
 import Dothoverbutt from './assets/Dot-Hover-Button/Dothoverbutt.jsx';
 import Navigation from './assets/Slide-out-Navigation/Navigation.jsx';
@@ -7,7 +7,6 @@ import background from './assets/background.svg';
 import MyForm from './assets/Formik-Form/Form.jsx';
 import LoadingSpinner from './assets/Loading-Spinner/LoadingSpinner';
 
-const Delayed = import('./assets/Delayed-Component/Delayed.jsx');
 
 
 export default function App() {
@@ -32,9 +31,11 @@ export default function App() {
           <Dothoverbutt />
         </div>
 
-        <div className='grid-element rotate' >
-          <div className='front'></div>
-          <div className='back'></div>
+        <div className='grid-element' >
+          <div className='rotate'>
+            <div className='front'></div>
+            <div className='back'></div>
+          </div>
         </div>
 
         <div className='grid-element button-boxshadow' >
@@ -56,7 +57,7 @@ export default function App() {
         <div className='grid-element form' >
           <MyForm />
         </div>
-        
+
         <div className='grid-element loader'>
           <LoadingSpinner />
         </div>

@@ -21,6 +21,7 @@ body {
         perspective: 1000px;
 
         .grid-element {
+            // flex: 1;
             border: 0.05rem grey dotted;
             padding: 10px;
         }
@@ -148,8 +149,12 @@ body {
             }
         }
 
+        .loader {
+            height: 75px;
+        }
+        
         .loader :nth-child(1){
-            margin-top: 40px;
+            margin-top: 20px;
         }
     }
 }
