@@ -1,5 +1,5 @@
 import React from 'react';
-import './css/App.min.css';
+import './css/App.css';
 import Dothoverbutt from './assets/Dot-Hover-Button/Dothoverbutt.jsx';
 import Navigation from './assets/Slide-out-Navigation/Navigation.jsx';
 import Social from './assets/Social-Button/Social.jsx';
@@ -8,7 +8,8 @@ import MyForm from './assets/Formik-Form/Form.jsx';
 import LoadingSpinner from './assets/Loading-Spinner/LoadingSpinner';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faCoffee, faCheckSquare, faAddressBook, faUser, faSearch } from '@fortawesome/free-solid-svg-icons';
-import TailwindTest from './assets/Tailwind-Test/TEMP';
+import TailwindTest from './assets/Tailwind-Test/TailwindTest';
+import StyledComponent from './assets/Styled-Component/StyledComponent';
 
 
 
@@ -76,6 +77,10 @@ export default function App() {
     
         <div className='grid-element tailwind'>
           <TailwindTest />
+        </div>
+
+        <div className='grid-element styledComp'>
+          <StyledComponent />
         </div>
       </div>
     </div>
