@@ -8,6 +8,7 @@ import MyForm from './assets/Formik-Form/Form.jsx';
 import LoadingSpinner from './assets/Loading-Spinner/LoadingSpinner';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faCoffee, faCheckSquare, faAddressBook, faUser, faSearch } from '@fortawesome/free-solid-svg-icons';
+import TailwindTest from './assets/Tailwind-Test/TEMP';
 
 
 
@@ -72,7 +73,10 @@ export default function App() {
           <FontAwesomeIcon icon={faCheckSquare} />
           <FontAwesomeIcon icon={faCoffee} />
         </div>
-
+    
+        <div className='grid-element tailwind'>
+          <TailwindTest />
+        </div>
       </div>
     </div>
   )
