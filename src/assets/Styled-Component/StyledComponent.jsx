@@ -43,6 +43,7 @@ const Text = styled.h1`
     &:hover {
         transform: scale(1.1);
     }
+    
 `
 
 const SubText = styled(Text)`
@@ -80,7 +81,6 @@ const RotatingButton = styled.button`
     transition: 0.2s;
     border-radius: 40%;
 
-    animation: ${rotate} infinite 2s linear;
 
     &:hover {
         transform: scale(1.1);
@@ -89,5 +89,12 @@ const RotatingButton = styled.button`
     &:active {
         transform: scale(0.9);
     }
+
+    @media (max-width: 720px) {
+        background-color: red;
+    }
+
+    
+    animation: ${rotate} infinite 2s linear;
 `
 
