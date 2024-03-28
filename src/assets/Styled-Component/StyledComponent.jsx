@@ -14,6 +14,9 @@ export default function StyledComponent() {
             <GlobalStyle />
             <Cont>
                 <Text color='red'>Hi to </Text>
+                <Text color='yellow'>Hi to </Text>
+                <Text color='black'>Hi to </Text>
+                <Text color='white'>Hi to </Text>
                 <Text>Styled Component</Text>
                 <SubText color='black'>Amazing!</SubText>
                 <Input name='name' value={name} setter={setName}></Input>
