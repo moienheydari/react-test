@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlay, faCoffee, faCheckSquare, faAddressBook, faUser, faSearch } from '@fortawesome/free-solid-svg-icons';
 import TailwindTest from './assets/Tailwind-Test/TailwindTest';
 import StyledComponent from './assets/Styled-Component/StyledComponent';
+import ImageGallery from './assets/Image-Gallery/ImageGallery.jsx';
 
 
 
@@ -81,6 +82,10 @@ export default function App() {
 
         <div className='grid-element styledComp'>
           <StyledComponent />
+        </div>
+
+        <div className='grid-element imagegallery'>
+          <ImageGallery />
         </div>
       </div>
     </div>
