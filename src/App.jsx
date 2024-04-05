@@ -84,9 +84,9 @@ export default function App() {
           <StyledComponent />
         </div>
 
-        <div className='grid-element imagegallery'>
-          <ImageGallery />
-        </div>
+          <div className='grid-element imagegallery'>
+            <ImageGallery />
+          </div>
       </div>
     </div>
   )

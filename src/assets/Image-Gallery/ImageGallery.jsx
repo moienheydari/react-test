@@ -7,7 +7,7 @@ import myImage4 from './PictureFour.png';
 
 export default function ImageGallery() {
     return (
-        <div className='container'>
+        <div className='gallerycontainer'>
             <div className='box box-1' style={{ '--img': `url(${myImage1})` }} data-text="hello"></div>
             <div className='box box-2' style={{ '--img': `url(${myImage2})` }} data-text="hello"></div>
             <div className='box box-3' style={{ '--img': `url(${myImage3})` }} data-text="hello"></div>
